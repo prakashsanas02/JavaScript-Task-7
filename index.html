@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Password-Generator</title>
+</head>
+
+<body style="background-color:aliceblue;">
+  <div id="alertaria">
+    <div class="alert" id="1noalert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      <strong>Don't</strong> Choose multiple password type . choose only one
+    </div>
+    <div class="alert" id="2noalert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      <strong>Please</strong> Checked any password type
+    </div>
+  </div>
+  <div id="blox">
+    <div id="main">
+      <h1 class="title">Password Generator</h1>
+      <p class="title" id="info"> Please Pick Any Password Type</p>
+      <div id="tool">
+        <span class="aria">
+          <p class="text"><i><strong>Super</strong></i> <strong>Strong</strong> Password</p>
+          <label class="switch">
+            <input type="checkbox" id="hard">
+            <span class="slider" id="green"></span>
+          </label>
+        </span>
+        <span class="aria">
+          <p class="text"><strong><i>Strong</i></strong> Password</p>
+          <label class="switch">
+            <input type="checkbox" id="mid">
+            <span class="slider" id="yellow"></span>
+          </label>
+        </span>
+        <span class="aria">
+          <p class="text"><strong><i>Weak</i></strong> Password</p>
+          <label class="switch">
+            <input type="checkbox" id="easy">
+            <span class="slider" id="red"></span>
+          </label>
+        </span>
+        <span class="aria">
+          <p class="text"><strong><i>Funny</i></strong> Password</p>
+          <label class="switch">
+            <input type="checkbox" id="funny">
+            <span class="slider" id="funny"></span>
+          </label>
+        </span>
+
+        <span class="aria">
+          <p class="text">Set Your Password Length</p>
+
+          <input type="number" name="" id="getpass" value="8" min="8" max="20">
+        </span>
+
+      </div>
+      <span id="input">
+
+        <input type="submit" style="background-color:blueviolet; font-weight: bold;" id="get" value="Get Your Password">
+      </span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
